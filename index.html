@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <meta name="description" content="VGG Internship Registration Form Assignment">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <form action="/register" method="POST">
+            <header id="header">
+                <h1>Registration Form</h1>
+            </header>
+            <main id="main">
+                <div class="outerDiv">
+                    <div class="innerDiv">
+                        <label for="title">Title:</label><br>
+                        <select name="title">
+                            <option value="select">Select</option>
+                            <option value="mr">MR</option>
+                            <option value="mrs">MRS</option>
+                            <option value="ms">MS</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="innerDiv">
+                        <label for="firstname">First Name: <span class="req"><abbr title="required">*</abbr></span></label><br>
+                        <input type="text" name="firstname" max="20">
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="innerDiv">
+                        <label for="lastname">Last Name: <span class="req"><abbr title="required">*</abbr></span></label><br>
+                        <input type="text" name="lastname" max="20">
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="innerDiv">
+                        <label for="gender">Gender: </label><br>
+                        <input type="radio" name="gender" value="male" checked>Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="other">Other
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="innerDiv">
+                        <label for="dob">Date of Birth:</label><br>
+                        <input type="date" name="dob" min="2000-01-01">
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="innerDiv">
+                        <label for="username">Username: <span class="req"><abbr title="required">*</abbr></span></label><br>
+                        <input type="text" name="username" min="8" required>
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="innerDiv">
+                        <label for="email">Email: <span class="req"><abbr title="required">*</abbr></span></label><br>
+                        <input type="email" name="email" required>
+                    </div>
+                </div>
+                <div class="outerDiv">
+                    <div class="innerDiv">
+                        <label for="password">Password: <span class="req"><abbr title="required">*</abbr></span></label><br>
+                        <input type="password" name="password" min="8" required>
+                    </div>
+                </div>
+            </main>
+            <footer id="footer">
+                <button type="submit">Register!</button>
+                <button type="reset">Reset</button>
+            </footer>
+            
+            
+            
+        </form>
+    </section>
+</body>
+</html>
